@@ -1,5 +1,5 @@
 body {
-  margin: 20px;
+  padding: 20px;
 }
 
 h1, h3, h2, h4 {
@@ -15,11 +15,11 @@ h2 {
 }
 
 p {
-  line-height: 20px;
+  line-height: 20px !important;
 }
 
 li {
-  line-height: 25px;
+  line-height: 25px !important;
 }
 
 .githubBanner {
