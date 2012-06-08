@@ -9,6 +9,7 @@ Package.on_use(function (api) {
   api.use('dev-trix', ['client', 'server']);
   api.use('simple-secure', 'server');
   api.use('backbone', 'client');
+  api.use('bootstrap', 'client');
   api.use('jquery', 'client');
 
   api.add_files('demo.css', 'client');
