@@ -3,7 +3,7 @@ Demo = function(options) {
 
   _.extend(self, options);
 
-  this.simpleDemo = _.isBoolean(this.simpleDemo) ? this.simpleDemo : true;
+  this.codeDemo = _.isBoolean(this.codeDemo) ? this.codeDemo : true;
 
   self._establishEnv();
 
@@ -11,8 +11,10 @@ Demo = function(options) {
     Meteor.startup(function() {
       self._showForkMe();
     });
+    
+    self._setupTabs();
   } else {
-    self._initSimpleDemo();
+    self._initCodeDemo();
   }
 };
 
@@ -35,13 +37,17 @@ Demo.prototype._showForkMe = function() {
   $('body').append($(bannerTemplate(self)));
 };
 
-Demo.prototype._initSimpleDemo = function() {
-  if (this.github && this.simpleDemo)
-    SimpleDemo.load(this.github);
+Demo.prototype._initCodeDemo = function() {
+  if (this.github && this.codeDemo)
+    CodeDemo.load(this.github);
 };
 
 Demo.prototype._establishEnv = function() {
   new MeteorEnv({
     hosts: this.hosts
   });
+};
+
+Demo.prototype._setupTabs = function() {
+  new Tabs(this.tabs.name, this.tabs.tabs);
 };

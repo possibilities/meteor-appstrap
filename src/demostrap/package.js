@@ -5,11 +5,12 @@ Package.describe({
 Package.on_use(function (api) {
   api.use('environment-hooks', ['client', 'server']);
   api.use('dev-trix', ['client', 'server']);
-  api.use('simple-demo', ['client', 'server']);
+  api.use('code-demo', ['client', 'server']);
   api.use('dev-trix', ['client', 'server']);
   api.use('simple-secure', 'server');
   api.use('backbone', 'client');
   api.use('bootstrap', 'client');
+  api.use('tabs', 'client');
   api.use('jquery', 'client');
 
   api.add_files('demo.css', 'client');
