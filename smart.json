@@ -1,0 +1,19 @@
+{
+  "packages": {
+    "environment-hooks": {
+      "git": "https://github.com/possibilities/meteor-environment-hooks.git"
+    },
+    "dev-trix": {
+      "git": "https://github.com/possibilities/meteor-dev-trix.git"
+    },
+    "code-demo": {
+      "git": "https://github.com/possibilities/meteor-code-demo.git"
+    },
+    "simple-secure": {
+      "git": "https://github.com/possibilities/meteor-simple-secure.git"
+    },
+    "tabs": {
+      "git": "https://github.com/possibilities/meteor-tabs.git"
+    }
+  }
+}
