@@ -1,4 +1,4 @@
-Demo = function(options) {
+Appstrap = function(options) {
   var self = this;
 
   _.extend(self, options);
@@ -23,7 +23,7 @@ _.templateSettings = {
   interpolate : /\{\{(.+?)\}\}/g
 };
 
-Demo.prototype._showForkMe = function() {
+Appstrap.prototype._showForkMe = function() {
   var self = this;
 
   // Setup context
@@ -37,17 +37,17 @@ Demo.prototype._showForkMe = function() {
   $('body').append($(bannerTemplate(self)));
 };
 
-Demo.prototype._initCodeDemo = function() {
+Appstrap.prototype._initCodeDemo = function() {
   if (this.github && this.codeDemo)
     CodeDemo.load(this.github);
 };
 
-Demo.prototype._establishEnv = function() {
+Appstrap.prototype._establishEnv = function() {
   new MeteorEnv({
     hosts: this.hosts
   });
 };
 
-Demo.prototype._setupTabs = function() {
+Appstrap.prototype._setupTabs = function() {
   new Tabs(this.tabs.name, this.tabs.tabs);
 };

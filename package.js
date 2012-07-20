@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "A smart package of common trix for my growing collection of bootstrap based demos"
+  summary: "A smart package of common trix I use in Meteor apps"
 });
 
 Package.on_use(function (api) {
@@ -12,6 +12,6 @@ Package.on_use(function (api) {
   api.use('tabs', 'client');
   api.use('jquery', 'client');
 
-  api.add_files('demo.css', 'client');
+  api.add_files('styles.css', 'client');
   api.add_files('common.js', ['client', 'server']);
 });
