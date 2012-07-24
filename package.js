@@ -11,6 +11,7 @@ Package.on_use(function (api) {
   api.use('bootstrap', 'client');
   api.use('tabs', 'client');
   api.use('jquery', 'client');
+  api.use('deploy-config', 'server');
 
   api.add_files('styles.css', 'client');
   api.add_files('common.js', ['client', 'server']);
