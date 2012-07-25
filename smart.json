@@ -15,8 +15,8 @@
     "tabs": {
       "git": "https://github.com/possibilities/meteor-tabs.git"
     },
-    "deploy-config": {
-      "git": "https://github.com/possibilities/meteor-deploy-config.git"
+    "fork-me": {
+      "git": "https://github.com/possibilities/meteor-fork-me.git"
     }
   }
 }
