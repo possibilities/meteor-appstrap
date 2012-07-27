@@ -16,11 +16,6 @@ Appstrap = function(options) {
   }
 };
 
-// Might as well make them look like mustache templates
-_.templateSettings = {
-  interpolate : /\{\{(.+?)\}\}/g
-};
-
 Appstrap.prototype._showForkMe = function() {
   new ForkMe(this.github);
 };
